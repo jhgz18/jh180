@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+nav,
+ul,
+figure,
+article {
+    display: block
+}
+
+body {
+    height: 665px;
+    background-image: url("https://wp.growproexperience.com/wp-content/uploads/2021/10/Que%CC%81-ver-en-Inglaterra.jpg");
+    background-size: 1500px;
+    font-size: 1em;
+    color:black;
+}
+
+.line{
+    /*linia divisora*/
+    height: 4px;
+    margin: 1em 0;
+    overflow: hidden;
+    }
+    
+    article .line{
+        /*linia divisora dentro de los articulos */
+        background-color:  rgb(89, 5, 5);
+    }
+
+nav{
+    background: rgba(12, 50, 111, 0.86);
+    position: absolute;
+    right: 15em;
+    top:4em;
+}
+
+nav.links{
+    background: rgba(113, 111, 223, 0.748);
+    position: absolute;
+    right: 0;
+    top:4em;
+}
+
+nav ul li {
+    /*para que el menu se muestre de forma horizontal*/
+    display: inline-table;
+}
+
+nav ul li a, 
+nav ul li a:visited{
+    color: rgb(233, 229, 229);
+    display: block;
+    float: right;
+    font-size: 1,25em;
+    font-weight: bold;
+    margin: 5px 2px;
+    padding: 7px 10px 4px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    background-color: #0f81ebce;
+}
+
+nav, article, nav ul li a, figure{
+    /* bordes redondiados*/
+    -moz-border-radius: 20px;
+    -webkit-border-radius:10px;
+    border-radius: 10px;
+}
+
+article{
+    background-color: rgba(34, 52, 124, 0.748);
+    margin: 3em 0;
+    padding: 20px;
+    text-shadow: 0 2px 0 rgb(11, 10, 10);
+    color: white;
+    position:static;
+    border-radius: 10px;
+    margin: 10em;
+}
+
+.clear:after{
+    color: ".";
+    display:block;
+    height: 0;
+    clear: both;
+    visibility:  hidden;
+}
+
